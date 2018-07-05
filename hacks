@@ -1,0 +1,4 @@
+If you changed permissions and git picks them up, fix it by using following command:
+git diff -p -R --no-color \
+    | grep -E "^(diff|(old|new) mode)" --color=never  \
+    | git apply

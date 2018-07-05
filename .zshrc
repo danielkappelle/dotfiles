@@ -92,3 +92,4 @@ export PATH=$PATH:/opt/gradle/gradle-3.4.1/bin
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator)
 alias clip="xclip -selection clipboard"
+alias vi="vim"
