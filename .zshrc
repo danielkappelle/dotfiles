@@ -83,10 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:$HOME/Downloads/android-sdk-linux/platform-tools:$HOME/Downloads/android-sdk-linux/tools:$HOME/Downloads/android-sdk-linux/build-tools/23.0.1
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$PATH:/opt/gradle/gradle-3.4.1/bin
-
+export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
 #eval `dircolors /path/to/dircolorsdb
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
