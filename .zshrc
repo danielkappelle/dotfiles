@@ -87,7 +87,7 @@ export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 #eval `dircolors /path/to/dircolorsdb
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator)
 alias clip="xclip -selection clipboard"
 alias vi="vim"
