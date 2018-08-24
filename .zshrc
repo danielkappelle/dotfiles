@@ -91,3 +91,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator)
 alias clip="xclip -selection clipboard"
 alias vi="vim"
+alias start_server="sudo systemctl start nginx.service && sudo systemctl start mariadb.service && sudo systemctl start php-fpm.service"
+alias stop_server="sudo systemctl stop  nginx.service && sudo systemctl stop  mariadb.service && sudo systemctl stop  php-fpm.service"
+alias cat="bat"
