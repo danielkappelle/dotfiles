@@ -1,3 +1,4 @@
+ export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -51,7 +52,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo)
+plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,12 +84,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export ANDROID_HOME=/home/daniel/Android/Sdk
+export PATH=$PATH:/home/daniel/Android/Sdk/tools:/home/daniel/Android/Sdk/platform-tools
 #eval `dircolors /path/to/dircolorsdb
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator)
+POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 alias clip="xclip -selection clipboard"
 alias vi="vim"
 alias start_server="sudo systemctl start nginx.service && sudo systemctl start mariadb.service && sudo systemctl start php-fpm.service"
