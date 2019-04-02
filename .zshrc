@@ -16,7 +16,7 @@ POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh
 
